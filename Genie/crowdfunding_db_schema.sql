@@ -21,7 +21,7 @@ CREATE TABLE "subcategory_df" (
 CREATE TABLE "campaign_df" (
     "cf_id" INTEGER   NOT NULL,
     "contact_id" INTEGER   NOT NULL,
-    "company-name" VARCHAR(250)   NOT NULL,
+    "company_name" VARCHAR(250)   NOT NULL,
     "description" VARCHAR(250)   NOT NULL,
     "goal" FLOAT8   NOT NULL,
     "pledged" FLOAT8   NOT NULL,
@@ -29,10 +29,10 @@ CREATE TABLE "campaign_df" (
     "backers_count" INTEGER   NOT NULL,
     "country" VARCHAR(250)   NOT NULL,
     "currency" VARCHAR(10)   NOT NULL,
-    "launched_date" TIMESTAMP   NOT NULL,
+    "launch_date" TIMESTAMP   NOT NULL,
     "end_date" TIMESTAMP   NOT NULL,
     "category_id" VARCHAR(50)   NOT NULL,
-    "subcategory_id" INTEGER   NOT NULL,
+    "subcategory_id" VARCHAR(250)   NOT NULL,
     CONSTRAINT "pk_campaign_df" PRIMARY KEY (
         "cf_id"
      )
